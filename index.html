@@ -4,11 +4,69 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="scripts/config.js"></script>
-    <script src="scripts/script.js"></script>
-    <script src="scripts/main.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="scripts/config.js" defer></script>
+    <script src="scripts/script.js" defer></script>
+    <script src="scripts/main.js" defer></script>
 </head>
-<body>
+<body>        
+    <!-- Share Popup -->
+        <div class="popupBackground">
+            <div class="popup">
+                <div>Share you score</div>
+                <form novalidate>
+                    <label for="name">Your name</label>
+                    <input type="text" id="name" name="name" placeholder="Your name">
+                    <label for="email">With who do you want to share your score?</label>
+                    <input type="email" id="email" name="email" placeholder="name@example.com">
+                    <button id="btnSendMail">Send</button>
+                </form>
+            </div>
+        </div> 
+    </div>
+        <!-- HEADER -->
+        <header>
+            <h1>FastoTypoo</h1>
+            <h2>Type as fast as you can!</h2>
+            <h3>Thanks to FastoTypoo you will learn to type faster with your keyboard :)</h3>
+        </header>
     
+        <!-- MAIN -->
+        <main>
+            <div class="zoneOptions">
+                <p>Please choose your option and type the proposition that will display under below</p>
+                <div class="optionSource">
+                    <input type="radio" name="optionSource" id="words" value="1" checked>
+                    <label for="words">Words</label>
+                    <input type="radio" name="optionSource" id="sentences" value="2">
+                    <label for="sentences">Sentences</label>
+                </div>
+            </div>
+    
+            <div class="zoneProposition">
+                
+            </div>
+    
+            <div class="zoneInsert">
+                <input type="text" id="inputWrite" name="inputWrite">
+                <button id="btnValidation">Validate</button>
+            </div>
+    
+            <div class="scoreZone">
+                Your score : <span>0</span>
+            </div>
+    
+            <div class="shareZone">
+                <button>Share</button>
+            </div>
+            
+        </main>
+    
+        <!-- FOOTER -->
+        <footer>
+            @Copyright : leofo Becode. 
+        </footer>
+    
+
 </body>
 </html>
